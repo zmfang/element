@@ -11,7 +11,7 @@
       :style="{ 'max-width': inputWidth - 32 + 'px', width: '100%' }">
       <span v-if="collapseTags && selected.length">
         <el-tag
-          :closable="!selectDisabled"
+          :closable="!selectDisabled&&!selected[0].disabled"
           :size="collapseTagSize"
           :hit="selected[0].hitState"
           type="info"
@@ -32,7 +32,7 @@
         <el-tag
           v-for="item in selected"
           :key="getValueKey(item)"
-          :closable="!selectDisabled"
+          :closable="!selectDisabled&&!item.disabled"
           :size="collapseTagSize"
           :hit="item.hitState"
           type="info"
@@ -564,6 +564,7 @@
             result.push(this.getOption(value));
           });
         }
+        console.log(result)
         this.selected = result;
         this.$nextTick(() => {
           this.resetInputHeight();
