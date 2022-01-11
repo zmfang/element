@@ -9,21 +9,21 @@ var transitionList = fs.readdirSync(path.resolve(__dirname, '../src/transitions'
 var externals = {};
 
 Object.keys(Components).forEach(function(key) {
-  externals[`element-ui/packages/${key}`] = `element-ui/lib/${key}`;
+  externals[`apexsoft-element-ui/packages/${key}`] = `apexsoft-element-ui/lib/${key}`;
 });
 
-externals['element-ui/src/locale'] = 'element-ui/lib/locale';
+externals['apexsoft-element-ui/src/locale'] = 'apexsoft-element-ui/lib/locale';
 utilsList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui/src/utils/${file}`] = `element-ui/lib/utils/${file}`;
+  externals[`apexsoft-element-ui/src/utils/${file}`] = `apexsoft-element-ui/lib/utils/${file}`;
 });
 mixinsList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui/src/mixins/${file}`] = `element-ui/lib/mixins/${file}`;
+  externals[`apexsoft-element-ui/src/mixins/${file}`] = `apexsoft-element-ui/lib/mixins/${file}`;
 });
 transitionList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui/src/transitions/${file}`] = `element-ui/lib/transitions/${file}`;
+  externals[`apexsoft-element-ui/src/transitions/${file}`] = `apexsoft-element-ui/lib/transitions/${file}`;
 });
 
 externals = [Object.assign({
@@ -36,7 +36,7 @@ exports.alias = {
   main: path.resolve(__dirname, '../src'),
   packages: path.resolve(__dirname, '../packages'),
   examples: path.resolve(__dirname, '../examples'),
-  'element-ui': path.resolve(__dirname, '../')
+  'apexsoft-element-ui': path.resolve(__dirname, '../')
 };
 
 exports.vue = {

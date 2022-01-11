@@ -29,9 +29,9 @@
       ],
       "plugins": [
         ["module-resolver", {
-          "root": ["element-ui"],
+          "root": ["apexsoft-element-ui"],
           "alias": {
-            "element-ui/src": "element-ui/lib"
+            "apexsoft-element-ui/src": "apexsoft-element-ui/lib"
           }
         }]
       ]

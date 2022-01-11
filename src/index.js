@@ -88,8 +88,8 @@ import Empty from '../packages/empty/index.js';
 import Descriptions from '../packages/descriptions/index.js';
 import DescriptionsItem from '../packages/descriptions-item/index.js';
 import Result from '../packages/result/index.js';
-import locale from 'element-ui/src/locale';
-import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
+import locale from 'apexsoft-element-ui/src/locale';
+import CollapseTransition from 'apexsoft-element-ui/src/transitions/collapse-transition';
 
 const components = [
   Pagination,
@@ -210,7 +210,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '2.15.7',
+  version: '2.15.71',
   locale: locale.use,
   i18n: locale.i18n,
   install,

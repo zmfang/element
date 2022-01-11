@@ -10,7 +10,7 @@
 </template>
 
 <script type="text/babel">
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import Emitter from 'apexsoft-element-ui/src/mixins/emitter';
 
   export default {
     mixins: [Emitter],

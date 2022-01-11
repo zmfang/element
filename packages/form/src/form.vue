@@ -7,7 +7,7 @@
   </form>
 </template>
 <script>
-  import objectAssign from 'element-ui/src/utils/merge';
+  import objectAssign from 'apexsoft-element-ui/src/utils/merge';
 
   export default {
     name: 'ElForm',

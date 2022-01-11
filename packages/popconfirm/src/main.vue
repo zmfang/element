@@ -36,9 +36,9 @@
 </template>
 
 <script>
-import ElPopover from 'element-ui/packages/popover';
-import ElButton from 'element-ui/packages/button';
-import {t} from 'element-ui/src/locale';
+import ElPopover from 'apexsoft-element-ui/packages/popover';
+import ElButton from 'apexsoft-element-ui/packages/button';
+import {t} from 'apexsoft-element-ui/src/locale';
 
 export default {
   name: 'ElPopconfirm',

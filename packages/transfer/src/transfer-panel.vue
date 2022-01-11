@@ -52,10 +52,10 @@
 </template>
 
 <script>
-  import ElCheckboxGroup from 'element-ui/packages/checkbox-group';
-  import ElCheckbox from 'element-ui/packages/checkbox';
-  import ElInput from 'element-ui/packages/input';
-  import Locale from 'element-ui/src/mixins/locale';
+  import ElCheckboxGroup from 'apexsoft-element-ui/packages/checkbox-group';
+  import ElCheckbox from 'apexsoft-element-ui/packages/checkbox';
+  import ElInput from 'apexsoft-element-ui/packages/input';
+  import Locale from 'apexsoft-element-ui/src/mixins/locale';
 
   export default {
     mixins: [Locale],

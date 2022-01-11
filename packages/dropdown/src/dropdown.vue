@@ -1,10 +1,10 @@
 <script>
-  import Clickoutside from 'element-ui/src/utils/clickoutside';
-  import Emitter from 'element-ui/src/mixins/emitter';
-  import Migrating from 'element-ui/src/mixins/migrating';
-  import ElButton from 'element-ui/packages/button';
-  import ElButtonGroup from 'element-ui/packages/button-group';
-  import { generateId } from 'element-ui/src/utils/util';
+  import Clickoutside from 'apexsoft-element-ui/src/utils/clickoutside';
+  import Emitter from 'apexsoft-element-ui/src/mixins/emitter';
+  import Migrating from 'apexsoft-element-ui/src/mixins/migrating';
+  import ElButton from 'apexsoft-element-ui/packages/button';
+  import ElButtonGroup from 'apexsoft-element-ui/packages/button-group';
+  import { generateId } from 'apexsoft-element-ui/src/utils/util';
 
   export default {
     name: 'ElDropdown',
